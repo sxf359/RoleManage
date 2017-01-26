@@ -62,4 +62,6 @@ D:\GitSource\RoleManage\src\Domain\Entities\Role.cs
 D:\GitSource\RoleManage\src\Domain\Entities\RoleMenu.cs
 D:\GitSource\RoleManage\src\Domain\Entities\User.cs
 D:\GitSource\RoleManage\src\Domain\Entities\UserRole.cs
+D:\GitSource\RoleManage\src\Domain\IRepositories\IRepository.cs
+D:\GitSource\RoleManage\src\Domain\IRepositories\IUserRepository.cs
 D:\GitSource\RoleManage\src\Domain\Properties\AssemblyInfo.cs

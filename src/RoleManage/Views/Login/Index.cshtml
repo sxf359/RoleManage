@@ -4,6 +4,7 @@
 @{
     Layout = null;
 }
+@model LoginModel
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,25 +19,27 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="http://fonour.cnblogs.com" target="_blank"><b>Fonour</b></a>
+            <a href="http://u9.yonyou.com:90" target="_blank"><b>U9Blog</b></a>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
             <p class="login-box-msg">权限管理系统</p>
-            <form action="/Home/Index" method="post">
+            @*<form action="/Home/Index" method="post">*@
+            <form asp-controller="Login" as-action="Index" method="post">
                 <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="用户名">
+                    <input asp-for="UserName" type="text" class="form-control" placeholder="用户名">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    <span>dddd</span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="密码">
+                    <input asp-for="Password" type="password" class="form-control" placeholder="密码">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
                 <div class="row">
                     <div class="col-xs-8">
                         <div class="checkbox icheck">
                             <label>
-                                <input type="checkbox"> 记住我
+                                <input asp-for="RememberMe" type="checkbox"> 记住我
                             </label>
                         </div>
                     </div>

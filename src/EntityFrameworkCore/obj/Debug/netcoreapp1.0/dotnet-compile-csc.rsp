@@ -107,3 +107,5 @@
 "D:\GitSource\RoleManage\src\EntityFrameworkCore\Migrations\20170126041315_Init.Designer.cs"
 "D:\GitSource\RoleManage\src\EntityFrameworkCore\Migrations\RoleDBContextModelSnapshot.cs"
 "D:\GitSource\RoleManage\src\EntityFrameworkCore\Properties\AssemblyInfo.cs"
+"D:\GitSource\RoleManage\src\EntityFrameworkCore\Repositories\RepositoryBase.cs"
+"D:\GitSource\RoleManage\src\EntityFrameworkCore\Repositories\UserRepository.cs"

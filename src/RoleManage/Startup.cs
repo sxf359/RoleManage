@@ -10,8 +10,10 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-
-namespace RoleManage
+using Domain.IRepositories;
+using Application.UserApp;
+using EntityFrameworkCore.Repositories;
+namespace MVC
 {
     public class Startup
     {
@@ -30,7 +32,17 @@ namespace RoleManage
             var sqlConnectionString = Configuration.GetConnectionString("Default");
             //添加数据上下文
             services.AddDbContext<RoleDBContext>(options => options.UseNpgsql(sqlConnectionString));
+            //仓储及服务进行依赖注入的实现
+            //注意：Asp.Net Core提供的依赖注入拥有三种生命周期模式，由短到长依次为：
+            //•Transient ServiceProvider总是创建一个新的服务实例。
+            //•Scoped ServiceProvider创建的服务实例由自己保存，（同一次请求）所以同一个ServiceProvider对象提供的服务实例均是同一个对象。
+            //•Singleton 始终是同一个实例对象
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserAppService, UserAppService>();
+
             services.AddMvc();
+            //session服务
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +62,9 @@ namespace RoleManage
             //使用静态文件
             app.UseStaticFiles();
 
+            //请求管道启用session
+            app.UseSession();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -65,21 +80,21 @@ namespace RoleManage
             //    await context.Response.WriteAsync("Hello World!");
             //});
 
-//项目说明：
-//•MVC
-//Asp.Net Core MVC网站项目。
+            //项目说明：
+            //•MVC
+            //Asp.Net Core MVC网站项目。
 
- //•Application
-//应用服务项目，定义应用服务接口及实现，MVC控制器调用；同时定义接收及返回数据对象（Dto，这里我有可能会省去，直接拿实体往表现层传了……）
+             //•Application
+            //应用服务项目，定义应用服务接口及实现，MVC控制器调用；同时定义接收及返回数据对象（Dto，这里我有可能会省去，直接拿实体往表现层传了……）
 
-//•Domain
-//主要定义实体、仓储接口等。
+            //•Domain
+            //主要定义实体、仓储接口等。
 
-//•EntityFrameworkCore
-//主要是仓储接口的EF Core具体实现
+            //•EntityFrameworkCore
+            //主要是仓储接口的EF Core具体实现
 
-//•Utility
-//通用项目，定义项目无关的一些公共类库。
+            //•Utility
+            //通用项目，定义项目无关的一些公共类库。
 
 
         }

@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Utility
+namespace Application.UserApp.Dtos
 {
-    public class Class1
+    public class UserRoleDto
     {
-        public Class1()
-        {
-        }
     }
 }
