@@ -13,7 +13,8 @@ namespace RoleManage.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+           // throw new Exception("“Ï≥£");
+           return View();
         }
     }
 }
