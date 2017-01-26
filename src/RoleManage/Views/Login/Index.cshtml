@@ -5,6 +5,7 @@
     Layout = null;
 }
 @model LoginModel
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,20 +22,23 @@
         <div class="login-logo">
             <a href="http://u9.yonyou.com:90" target="_blank"><b>U9Blog</b></a>
         </div>
+       
         <!-- /.login-logo -->
         <div class="login-box-body">
             <p class="login-box-msg">权限管理系统</p>
-            @*<form action="/Home/Index" method="post">*@
+            <div asp-validation-summary="All" class="text-danger"></div>
+            @*<form action="/Home/Index" method="post">  asp-controller 智能提示不好用 todo:*@
             <form asp-controller="Login" as-action="Index" method="post">
                 <div class="form-group has-feedback">
                     <input asp-for="UserName" type="text" class="form-control" placeholder="用户名">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
-                    <span>dddd</span>
+                    <span asp-validation-for="UserName" class="text-danger"></span>
                 </div>
                 <div class="form-group has-feedback">
                     <input asp-for="Password" type="password" class="form-control" placeholder="密码">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
+               
                 <div class="row">
                     <div class="col-xs-8">
                         <div class="checkbox icheck">
@@ -57,7 +61,7 @@
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/lib/iCheck/icheck.js"></script>
-    <script>
+    @*<script>
         $(function () {
             $('input').iCheck({
                 checkboxClass: 'icheckbox_square-blue',
@@ -65,6 +69,6 @@
                 increaseArea: '20%' // optional
             });
         });
-    </script>
+    </script>*@
 </body>
 </html>

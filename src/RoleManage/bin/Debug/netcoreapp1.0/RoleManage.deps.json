@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "16721ef1c9d9321bf9986aafd371049a0e8da151"
+    "signature": "12b46d931e4f946eeaf89c49d15f76199c939a3d"
   },
   "compilationOptions": {
     "defines": [
@@ -27,10 +27,10 @@
           "Microsoft.Extensions.Configuration": "1.1.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "1.1.0",
           "Microsoft.Extensions.Configuration.Json": "1.1.0",
-          "Microsoft.AspNetCore.Razor.Tools": "1.1.0-preview4-final",
           "Microsoft.AspNetCore.Session": "1.0.0",
           "Application": "1.0.0",
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "Microsoft.AspNetCore.Razor.Tools": "1.0.0-preview4-final"
         },
         "runtime": {
           "RoleManage.dll": {}
@@ -222,7 +222,7 @@
           "lib/netstandard1.3/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Html.Abstractions/1.0.0": {
+      "Microsoft.AspNetCore.Html.Abstractions/1.0.1": {
         "dependencies": {
           "System.Collections": "4.3.0",
           "System.Resources.ResourceManager": "4.3.0",
@@ -486,7 +486,7 @@
       },
       "Microsoft.AspNetCore.Mvc.Razor.Host/1.0.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.Razor.Runtime": "1.0.0",
+          "Microsoft.AspNetCore.Razor.Runtime": "1.0.1",
           "Microsoft.Extensions.Caching.Memory": "1.1.0",
           "Microsoft.Extensions.FileProviders.Physical": "1.1.0",
           "System.Collections.Concurrent": "4.3.0",
@@ -519,7 +519,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Antiforgery": "1.0.1",
           "Microsoft.AspNetCore.Diagnostics.Abstractions": "1.0.0",
-          "Microsoft.AspNetCore.Html.Abstractions": "1.0.0",
+          "Microsoft.AspNetCore.Html.Abstractions": "1.0.1",
           "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
           "Microsoft.AspNetCore.Mvc.DataAnnotations": "1.0.1",
           "Microsoft.AspNetCore.Mvc.Formatters.Json": "1.0.1",
@@ -535,7 +535,7 @@
           "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Razor/1.0.0": {
+      "Microsoft.AspNetCore.Razor/1.0.1": {
         "dependencies": {
           "System.Diagnostics.Debug": "4.3.0",
           "System.Linq": "4.3.0",
@@ -552,25 +552,10 @@
           "lib/netstandard1.3/Microsoft.AspNetCore.Razor.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Razor.Design/1.1.0-preview4-final": {
+      "Microsoft.AspNetCore.Razor.Runtime/1.0.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.Razor.Runtime": "1.0.0",
-          "Microsoft.Extensions.CommandLineUtils": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "1.1.0",
-          "Microsoft.NETCore.App": "1.0.1",
-          "Newtonsoft.Json": "9.0.1"
-        },
-        "runtime": {
-          "lib/netcoreapp1.0/Microsoft.AspNetCore.Razor.Design.dll": {}
-        },
-        "compile": {
-          "lib/netcoreapp1.0/Microsoft.AspNetCore.Razor.Design.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Razor.Runtime/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Html.Abstractions": "1.0.0",
-          "Microsoft.AspNetCore.Razor": "1.0.0",
+          "Microsoft.AspNetCore.Html.Abstractions": "1.0.1",
+          "Microsoft.AspNetCore.Razor": "1.0.1",
           "System.Collections.Concurrent": "4.3.0",
           "System.IO.FileSystem": "4.3.0",
           "System.Reflection": "4.3.0",
@@ -586,14 +571,16 @@
           "lib/netstandard1.5/Microsoft.AspNetCore.Razor.Runtime.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Razor.Tools/1.1.0-preview4-final": {
+      "Microsoft.AspNetCore.Razor.Tools/1.0.0-preview4-final": {
         "dependencies": {
-          "Microsoft.AspNetCore.Razor.Design": "1.1.0-preview4-final",
+          "Microsoft.AspNetCore.Razor.Runtime": "1.0.1",
           "Microsoft.DotNet.Cli.Utils": "1.0.0-preview2-003121",
           "Microsoft.DotNet.ProjectModel.Loader": "1.0.0-preview2-003121",
+          "Microsoft.Extensions.CommandLineUtils": "1.0.1",
           "Microsoft.Extensions.PlatformAbstractions": "1.0.0",
           "Microsoft.NETCore.App": "1.0.1",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Diagnostics.Process": "4.1.0",
           "System.Runtime.Serialization.Primitives": "4.3.0"
         },
         "runtime": {
@@ -914,7 +901,7 @@
           "lib/netstandard1.3/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
-      "Microsoft.Extensions.CommandLineUtils/1.0.0": {
+      "Microsoft.Extensions.CommandLineUtils/1.0.1": {
         "dependencies": {
           "System.Collections": "4.3.0",
           "System.Console": "4.3.0",
@@ -3725,10 +3712,10 @@
       "serviceable": true,
       "sha512": "sha512-GynDm8oz39EA8WvLIkfitPwHU27IVhLoVocZKaEYQ6Cs+jZnW2PT3OKBKJeeEepvMMbS5grvKM7HeZyGZqPthg=="
     },
-    "Microsoft.AspNetCore.Html.Abstractions/1.0.0": {
+    "Microsoft.AspNetCore.Html.Abstractions/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/JLMu2k8FiInLZC0SHXT+Cmdzi7AYa3B5v9w32Kd0mPTH4RYIQo/XNPIOr2HsPTXp3I9cZo1DajaMVGnJMN2QA=="
+      "sha512": "sha512-aW0pf5e/SiibEDZAWcyE5dCtGwDkIAX81vGlFKCQOaSbSODp20hjLoyF6zADURfYjeMW1kAGrg6XZZxMxN0EVA=="
     },
     "Microsoft.AspNetCore.Http/1.0.0": {
       "type": "package",
@@ -3825,25 +3812,20 @@
       "serviceable": true,
       "sha512": "sha512-1zGeF76JEqvocxdM+H5n/vJunUUVNzKK4LmgnaFdrrCDTrI6MVdok+8TBBUbeI+uNk3ssrLnP3EcHIdvxl66gw=="
     },
-    "Microsoft.AspNetCore.Razor/1.0.0": {
+    "Microsoft.AspNetCore.Razor/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+vhlFn8n45hj1M91HYVm2ryLMZ+ZYR/OUdBVE8aUzkvkTVF+3UnNxSY3hAEugcgcbf9/XQTE+DDxEgN4LdYEjg=="
+      "sha512": "sha512-wAx0SDJ33J4fg3pFkF9dNQzok7X2iEBvhtVqzFB4JKG6/FILw0TeHrZ6q5CmSUl3vwRDNhBP6qNgFiqLmP11fQ=="
     },
-    "Microsoft.AspNetCore.Razor.Design/1.1.0-preview4-final": {
+    "Microsoft.AspNetCore.Razor.Runtime/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-30zfJaiVGlFK4AlYvddJ7dysfwryfGkAYEYm760VEiKdCJ2kRrx0rlDWYDolWvr9Oh2A8iqSGwDwtVCG4W4qhA=="
+      "sha512": "sha512-xOwGg3NkFoM9RbWKmnZx4zBm//TN21fJjU76nYlJ3PhDSdGAlRWmtVfO/zqdvWCVJlneP2aPXS0TG58PXDZCjQ=="
     },
-    "Microsoft.AspNetCore.Razor.Runtime/1.0.0": {
+    "Microsoft.AspNetCore.Razor.Tools/1.0.0-preview4-final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hsq6xJeqDDb78akZuy79QE3kaCxcigD3vccbIaNrrz7JSXOzayfteF06ToK+J1SXSDRtrBj3XZZfrjiqIY/vCw=="
-    },
-    "Microsoft.AspNetCore.Razor.Tools/1.1.0-preview4-final": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-elen0GMaXIUZjL7X61V6tvCm64vYw6NL+XDBIUguFXpx3PK4GXvYALLDK8zzjgUVSS0ChYBX3o4Xw20iQwXiJQ=="
+      "sha512": "sha512-N9353PolBeNApqPYHd8BPo47QUHOa4jVOGyV0tuYLVGl7wscCoFRsLfiFN3+pYttRnWAP0E5VEgx1LkidIsLIg=="
     },
     "Microsoft.AspNetCore.Routing/1.0.0": {
       "type": "package",
@@ -3940,10 +3922,10 @@
       "serviceable": true,
       "sha512": "sha512-ihFzFRKf/LrXHIvn0wDDt6oLxaAjsCPfrIzV9CLrTURD7qT+HujJ0TaRfC91e6tB8OAgkzY4AsHRBNq8KzrQQQ=="
     },
-    "Microsoft.Extensions.CommandLineUtils/1.0.0": {
+    "Microsoft.Extensions.CommandLineUtils/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kXJ8+YvEjp1j7ezJ7yvQMLYbRL6QlpBUjRoBfqghoe80yqZ5azYB90lL4iNeyRCznWF+cGm41aaIoFU0aOq7TQ=="
+      "sha512": "sha512-wTk8JFNIBF94m8gzbkjinkgdtD2SfZe8yu8847x8YsqDYYsHOT4siGZeFot3/061RfMm2W2QopRKyNkzz16V2A=="
     },
     "Microsoft.Extensions.Configuration/1.1.0": {
       "type": "package",

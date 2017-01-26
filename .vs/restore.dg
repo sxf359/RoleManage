@@ -1,1 +1,7 @@
-#:D:\GitSource\RoleManage\src\Utility\Utility.xproj
+#:D:\GitSource\RoleManage\src\RoleManage\MVC.xproj
+D:\GitSource\RoleManage\src\RoleManage\MVC.xproj|D:\GitSource\RoleManage\src\Application\Application.xproj
+D:\GitSource\RoleManage\src\RoleManage\MVC.xproj|D:\GitSource\RoleManage\src\Domain\Domain.xproj
+D:\GitSource\RoleManage\src\RoleManage\MVC.xproj|D:\GitSource\RoleManage\src\EntityFrameworkCore\EntityFrameworkCore.xproj
+D:\GitSource\RoleManage\src\RoleManage\MVC.xproj|D:\GitSource\RoleManage\src\Utility\Utility.xproj
+D:\GitSource\RoleManage\src\Application\Application.xproj|D:\GitSource\RoleManage\src\Domain\Domain.xproj
+D:\GitSource\RoleManage\src\EntityFrameworkCore\EntityFrameworkCore.xproj|D:\GitSource\RoleManage\src\Domain\Domain.xproj

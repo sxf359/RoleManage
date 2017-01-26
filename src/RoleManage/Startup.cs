@@ -41,6 +41,7 @@ namespace MVC
             services.AddScoped<IUserAppService, UserAppService>();
 
             services.AddMvc();
+           
             //session服务
             services.AddSession();
         }

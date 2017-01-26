@@ -14,6 +14,7 @@ namespace MVC.Controllers
         public IActionResult Index()
         {
            // throw new Exception("“Ï≥£");
+           
            return View();
         }
     }
