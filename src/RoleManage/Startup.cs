@@ -85,7 +85,7 @@ namespace MVC
             //•MVC
             //Asp.Net Core MVC网站项目。
 
-             //•Application
+            //•Application
             //应用服务项目，定义应用服务接口及实现，MVC控制器调用；同时定义接收及返回数据对象（Dto，这里我有可能会省去，直接拿实体往表现层传了……）
 
             //•Domain
@@ -96,7 +96,7 @@ namespace MVC
 
             //•Utility
             //通用项目，定义项目无关的一些公共类库。
-
+            //
 
         }
     }

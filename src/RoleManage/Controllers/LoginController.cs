@@ -37,7 +37,8 @@ namespace  MVC.Controllers
                     //jmp to 系统首页
                     return RedirectToAction("Index", "Home");
                 }
-                ModelState.AddModelError("", "用户名或密码错误");
+                //ModelState.AddModelError("", "用户名或密码错误");
+                ViewBag.ErrorInfo = "用户名或密码错误";
                 return View();
             }
             return View(model);

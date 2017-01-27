@@ -8,14 +8,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MVC.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         // GET: /<controller>/
         public IActionResult Index()
         {
-           // throw new Exception("“Ï≥£");
-           
-           return View();
+            // throw new Exception("“Ï≥£");
+            return View();
         }
     }
 }

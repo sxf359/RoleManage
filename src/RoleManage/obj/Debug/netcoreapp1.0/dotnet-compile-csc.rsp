@@ -203,6 +203,7 @@
 -resource:"D:\GitSource\RoleManage\src\RoleManage\obj\Debug\netcoreapp1.0\RoleManagedotnet-compile.deps.json",RoleManage.deps.json
 "D:\GitSource\RoleManage\src\RoleManage\Program.cs"
 "D:\GitSource\RoleManage\src\RoleManage\Startup.cs"
+"D:\GitSource\RoleManage\src\RoleManage\Controllers\BaseController.cs"
 "D:\GitSource\RoleManage\src\RoleManage\Controllers\HomeController.cs"
 "D:\GitSource\RoleManage\src\RoleManage\Controllers\LoginController.cs"
 "D:\GitSource\RoleManage\src\RoleManage\Controllers\SharedController.cs"
