@@ -135,7 +135,7 @@ namespace EntityFrameworkCore.Repositories
         /// <param name="where">条件</param>
         /// <param name="order">排序</param>
         /// <returns></returns>
-        public IQueryable<TEntity> LoadPageList(int startPage, int pageSize, out int rowCount, Expression<Func<TEntity, bool>> where, Expression<Func<TEntity, bool>> order)
+        public IQueryable<TEntity> LoadPageList(int startPage, int pageSize, out int rowCount, Expression<Func<TEntity, bool>> where, Expression<Func<TEntity, object>> order)
         {
             var result = from p in _dbContext.Set<TEntity>() select p;
             if (where!=null)

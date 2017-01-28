@@ -13,6 +13,10 @@ using Microsoft.EntityFrameworkCore;
 using Domain.IRepositories;
 using Application.UserApp;
 using EntityFrameworkCore.Repositories;
+using Application;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+
 namespace MVC
 {
     public class Startup
@@ -23,6 +27,7 @@ namespace MVC
             var builder = new ConfigurationBuilder().SetBasePath(env.ContentRootPath).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
+            RoleMapper.Initialize();
         }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
@@ -62,6 +67,10 @@ namespace MVC
             }
             //使用静态文件
             app.UseStaticFiles();
+
+            app.UseStaticFiles(new StaticFileOptions() {
+               FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory())
+            });
 
             //请求管道启用session
             app.UseSession();
